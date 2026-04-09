@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "KeyStore",
+  "version": "1.0.0",
+  "description": "Instantly store and retrieve key-value pairs with keyboard shortcuts.",
+  "permissions": ["storage", "clipboardWrite", "commands"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "commands": {
+    "open-search": {
+      "suggested_key": { "default": "Alt+1" },
+      "description": "Open KeyStore search"
+    },
+    "open-add": {
+      "suggested_key": { "default": "Alt+2" },
+      "description": "Add a key-value pair"
+    },
+    "open-upload": {
+      "suggested_key": { "default": "Alt+3" },
+      "description": "Bulk upload CSV/Excel"
+    },
+    "open-manage": {
+      "suggested_key": { "default": "Alt+4" },
+      "description": "Manage stored keys"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
