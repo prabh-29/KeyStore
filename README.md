@@ -71,4 +71,4 @@ Switching between notes, files, or password managers is slow and breaks flow.
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/prabh-29/keystore.git
+   git clone https://github.com/prabh-29/KeyStore.git
